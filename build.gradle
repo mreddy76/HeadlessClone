@@ -28,14 +28,9 @@ dependencies {
     compile("org.seleniumhq.selenium:selenium-server:3.5.3")
 }
 
-task runApp(type:JavaExec) {
-    classpath = sourceSets.main.runtimeClasspath
-
-    main = project.hasProperty("mainClass") ? project.getProperty("mainClass") : "org.xyz.firefox.test.HeadlessFirefoxTest"
-}
 
 task(runMain, dependsOn: 'classes', type: JavaExec) {
-   main = 'org.maximus.firefox.test.HeadlessFirefoxTest'
+   main = 'org.xyz.firefox.test.HeadlessFirefoxTest'
    classpath = sourceSets.main.runtimeClasspath
 }
 
