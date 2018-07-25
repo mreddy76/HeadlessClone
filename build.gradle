@@ -31,7 +31,7 @@ dependencies {
 task runApp(type:JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
 
-    main = project.hasProperty("mainClass") ? project.getProperty("mainClass") : "org.maximus.firefox.test.HeadlessFirefoxTest"
+    main = project.hasProperty("mainClass") ? project.getProperty("mainClass") : "org.xyz.firefox.test.HeadlessFirefoxTest"
 }
 
 task(runMain, dependsOn: 'classes', type: JavaExec) {
