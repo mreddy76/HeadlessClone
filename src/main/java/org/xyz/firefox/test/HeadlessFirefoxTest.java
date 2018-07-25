@@ -13,7 +13,7 @@ public class HeadlessFirefoxTest {
   public static void main(String [] args) {
     FirefoxBinary firefoxBinary = new FirefoxBinary();
     firefoxBinary.addCommandLineOptions("--headless");
-    System.setProperty("webdriver.gecko.driver", "C:\\work\\installed\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+    System.setProperty("webdriver.gecko.driver", "/opt/firefox/geckodriver");
     FirefoxOptions firefoxOptions = new FirefoxOptions();
     firefoxOptions.setBinary(firefoxBinary);
     FirefoxDriver driver = new FirefoxDriver(firefoxOptions);
